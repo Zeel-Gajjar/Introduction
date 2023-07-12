@@ -37,10 +37,10 @@ body {
   box-sizing: border-box;
   position: relative;
   line-height: 1.5;
-  font-family: sans-serif;
+  font-family: 'Quicksand';
   overflow-x: hidden;
   overflow-y: scroll;
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Quicksand'; }
 
 a {
   text-decoration: none;
@@ -93,6 +93,7 @@ textarea {
   letter-spacing: 3px;
   text-align: center;
   margin-bottom: 3.5rem;
+  font-family: 'Georgia';
   position: relative; }
   .heading-sec__main--lt {
     color: #fff; }
@@ -105,7 +106,7 @@ textarea {
     top: calc(100% + 1.5rem);
     height: 5px;
     width: 3rem;
-    background: #0062b9;
+    background: #6930c3;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px; }
@@ -146,7 +147,7 @@ textarea {
   display: inline-block;
   font-weight: 700;
   border-radius: 5px;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 15px 0 rgba(210, 66, 66, 0.15);
   transition: transform .3s; }
   .btn:hover {
     transform: translateY(-3px); }
@@ -165,7 +166,21 @@ textarea {
     border: 2px solid rgba(52, 9, 95, 0.8);
     box-shadow: none;
     padding: calc(1.5rem - 2px) calc(5rem - 2px); }
-
+.contact-1{
+  font-size: medium;
+}
+.contact-2{
+  font-size: 30px;
+  font-family: 'Playfair Display';
+  margin-bottom: 10px;
+}
+.under_development{
+  color: coral;
+  font-size: xx-large;
+  height: bold;
+  padding-bottom: 2%;
+  padding-top: 5%;
+}
 .sec-pad {
   padding: 12rem 0; }
   @media only screen and (max-width: 56.25em) {
@@ -184,14 +199,17 @@ textarea {
 
 .d-none {
   display: none; }
-
+.link{
+  text-decoration: underline;
+  font-weight: bold;
+}
 .home-hero {
   color: #fff;
   background: linear-gradient( to bottom right,  #6930c3, #4ea8de, #72efdd), url(../../assets/svg/common-bg.svg);
   background-position: center;
   height: 85vh;
-  min-height: 60rem;
-  max-height: 90rem;
+  min-height: 50rem;
+  max-height: 120rem;
   position: relative; }
   @media only screen and (max-width: 37.5em) {
     .home-hero {
@@ -257,10 +275,38 @@ textarea {
     margin-top: 5rem;
     text-align: center; }
 
-
+.about {
+  background: #fafafa; }
+  .about__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem; }
+    @media only screen and (max-width: 56.25em) {
+      .about__content {
+        grid-template-columns: 1fr;
+        grid-gap: 8rem; } }
+    .about__content-title {
+      font-weight: 700;
+      font-size: 2.8rem;
+      font-family: Georgia;
+      margin-bottom: 3rem; }
+      @media only screen and (max-width: 37.5em) {
+        .about__content-title {
+          font-size: 2.4rem; } }
+    .about__content-details-para {
+      font-size: 1.8rem;
+      color: grey;
+      max-width: 60rem;
+      line-height: 1.7;
+      margin-bottom: 1rem; }
+      .about__content-details-para--hl {
+        font-weight: 700;
+        margin: 0 3px; }
+      .about__content-details-para:last-child {
+        margin-bottom: 4rem; }
 
 .projects__row {
-  display: block;
+  /* display: grid; */
   grid-template-columns: 1.5fr 1fr;
   grid-gap: 5rem;
   margin-bottom: 11rem; }
@@ -280,16 +326,13 @@ textarea {
     width: 100%;
     display: block;
     object-fit: cover; }
-  .projects__row-content {
+.projects__row-content {
     padding: 2rem 0;
     display: block;
     text-align: center;
-    flex-direction: column;
-   }
-   .link{
-    text-decoration: underline;
-    font-weight: bold;
-  }
+    flex-direction: row;
+    padding-top: 5%;
+}
     @media only screen and (max-width: 56.25em) {
       .projects__row-content {
         align-items: center; } }
@@ -303,10 +346,11 @@ textarea {
     .projects__row-content-desc {
       font-size: 1.8rem;
       color: grey;
-      padding-left: 10%;
-      padding-right: 10%;
+      max-width: 60rem;
       line-height: 1.7;
-      margin-bottom: 3rem; }
+      margin-bottom: 3rem;
+      margin-left: 22%;
+     }
       @media only screen and (max-width: 37.5em) {
         .projects__row-content-desc {
           font-size: 1.7rem; } }
@@ -590,7 +634,7 @@ textarea {
     letter-spacing: 2px;
     transition: color .3s; }
     .header__sm-menu-link a:hover {
-      color: linear-gradient( to bottom right,  #6930c3, #4ea8de, #72efdd); }
+      color:  #6930c3; }
   .header__sm-menu-link:first-child a {
     border-top: 1px solid #eee; }
   .header__sm-menu-link-last {
@@ -659,6 +703,7 @@ textarea {
     background: rgba(153, 153, 153, 0.2);
     border-radius: 5px;
     font-weight: 600;
+    font-family: Georgia;
     color: #777; }
 
 .mouse {
