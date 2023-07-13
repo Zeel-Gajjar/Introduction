@@ -323,7 +323,7 @@ textarea {
   .projects__row-img-cont {
     overflow: hidden; }
   .projects__row-img {
-    width: 720px;
+    width: 100%;
     display: block;
     object-fit: cover; }
   .projects__row-content {
